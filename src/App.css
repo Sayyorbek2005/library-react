@@ -14,11 +14,12 @@
 p,
 button,
 li,
-` h1,
+h1,
 h2,
 h3,
 h4,
-span {
+span,
+b {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
 }
@@ -29,6 +30,7 @@ span {
 :root {
     /* border radius */
     --radius-5: border-radius: 5px;
+    --border-1: border: 1px solid black;
     /* ? colors */
     --primary-color: #2563eb;
     --color-white: white;
@@ -46,6 +48,7 @@ span {
     --font-weight-500: font-weight: 500;
     --font-weight-600: font-weight: 600;
     --font-weight-700: font-weight: 700;
+    /* ? gap */
     --gap-10: gap: 10px;
     --gap-20: gap: 20px;
     --gap-30: gap: 30px;
@@ -64,10 +67,25 @@ li {
 }
 
 
+
+/* ? max-width */
+.max-width{
+    max-width: 1300px;
+    margin: auto;
+
+}
+
 /* ? display */
 
 .display-flex {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
+
+.flex-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
